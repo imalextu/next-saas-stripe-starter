@@ -1,4 +1,7 @@
 const { withContentlayer } = require("next-contentlayer2");
+const createNextIntlPlugin = require('next-intl/plugin');
+
+const withNextIntl = createNextIntlPlugin();
 
 import("./env.mjs");
 
@@ -27,4 +30,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withContentlayer(nextConfig);
+module.exports = withNextIntl(withContentlayer(nextConfig));
