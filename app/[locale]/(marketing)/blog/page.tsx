@@ -1,3 +1,4 @@
+export const runtime = "edge";
 import { allPosts } from "contentlayer/generated";
 
 import { constructMetadata, getBlurDataURL } from "@/lib/utils";

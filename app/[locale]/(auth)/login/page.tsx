@@ -1,3 +1,4 @@
+export const runtime = "edge";
 import { Suspense } from "react";
 import { Metadata } from "next";
 import { Link } from '@/i18n/routing';

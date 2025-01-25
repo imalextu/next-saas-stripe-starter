@@ -1,3 +1,4 @@
+export const runtime = "edge";
 import { constructMetadata } from "@/lib/utils";
 import { Skeleton } from "@/components/ui/skeleton";
 import { AreaChartStacked } from "@/components/charts/area-chart-stacked";

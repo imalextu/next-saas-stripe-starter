@@ -1,3 +1,4 @@
+export const runtime = "edge";
 import { allGuides } from "contentlayer/generated";
 import { Link } from '@/i18n/routing';
 import { notFound } from "next/navigation";

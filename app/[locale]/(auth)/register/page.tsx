@@ -1,3 +1,4 @@
+export const runtime = "edge";
 import { Link } from '@/i18n/routing'
 
 import { cn } from "@/lib/utils"
