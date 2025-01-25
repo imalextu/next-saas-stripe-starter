@@ -1,7 +1,7 @@
 "use client";
 
 import { useContext } from "react";
-import Link from "next/link";
+import { Link } from '@/i18n/routing';
 import { useSelectedLayoutSegment } from "next/navigation";
 import { useSession } from "next-auth/react";
 
