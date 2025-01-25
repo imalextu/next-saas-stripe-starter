@@ -1,8 +1,8 @@
 import * as React from "react";
 import NextImage, { ImageProps } from "next/image";
 import { Link } from '@/i18n/routing';
-import { useMDXComponent } from "next-contentlayer2/hooks";
-
+// import { useMDXComponent } from "next-contentlayer2/hooks";
+import ReactMarkdown from "react-markdown";
 import { cn } from "@/lib/utils";
 import { MdxCard } from "@/components/content/mdx-card";
 import BlurImage from "@/components/shared/blur-image";
@@ -205,33 +205,35 @@ interface MdxProps {
 }
 
 export function Mdx({ code, images }: MdxProps) {
-  const Component = useMDXComponent(code);
 
-  const MDXImage = (props: any) => {
-    if (!images) return null;
-    const blurDataURL = images.find(
-      (image) => image.src === props.src,
-    )?.blurDataURL;
+  return <ReactMarkdown components={components}>{code}</ReactMarkdown>;
+  // const Component = useMDXComponent(code);
 
-    return (
-      <div className="mt-5 w-full overflow-hidden rounded-lg border">
-        <BlurImage
-          {...props}
-          blurDataURL={blurDataURL}
-          className="size-full object-cover object-center"
-        />
-      </div>
-    );
-  };
+  // const MDXImage = (props: any) => {
+  //   if (!images) return null;
+  //   const blurDataURL = images.find(
+  //     (image) => image.src === props.src,
+  //   )?.blurDataURL;
 
-  return (
-    <div className="mdx">
-      <Component
-        components={{
-          ...components,
-          Image: MDXImage,
-        }}
-      />
-    </div>
-  );
+  //   return (
+  //     <div className="mt-5 w-full overflow-hidden rounded-lg border">
+  //       <BlurImage
+  //         {...props}
+  //         blurDataURL={blurDataURL}
+  //         className="size-full object-cover object-center"
+  //       />
+  //     </div>
+  //   );
+  // };
+
+  // return (
+  //   <div className="mdx">
+  //     <Component
+  //       components={{
+  //         ...components,
+  //         Image: MDXImage,
+  //       }}
+  //     />
+  //   </div>
+  // );
 }
