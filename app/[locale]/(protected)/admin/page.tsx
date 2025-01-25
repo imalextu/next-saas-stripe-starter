@@ -8,7 +8,7 @@ import InfoCard from "@/components/dashboard/info-card";
 import TransactionsList from "@/components/dashboard/transactions-list";
 
 export const metadata = constructMetadata({
-  title: "Admin – SaaS Starter",
+  title: "Admin – TargetPrompt",
   description: "Admin page for only admin management.",
 });
 

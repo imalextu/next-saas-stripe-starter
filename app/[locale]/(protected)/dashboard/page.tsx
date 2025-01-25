@@ -6,7 +6,7 @@ import { DashboardHeader } from "@/components/dashboard/header";
 import { EmptyPlaceholder } from "@/components/shared/empty-placeholder";
 
 export const metadata = constructMetadata({
-  title: "Dashboard – SaaS Starter",
+  title: "Dashboard – TargetPrompt",
   description: "Create and manage content.",
 });
 
