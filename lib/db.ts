@@ -4,15 +4,19 @@ import "server-only";
 
 declare global {
   // eslint-disable-next-line no-var
-  var cachedPrisma: PrismaClient
+  var cachedPrisma: ReturnType<typeof getPrismaClient>
 }
 
-export let prisma: PrismaClient
+const getPrismaClient = () => {
+  return new PrismaClient().$extends(withAccelerate())
+}
+
+export let prisma: ReturnType<typeof getPrismaClient>
 if (process.env.NODE_ENV === "production") {
-  prisma = new PrismaClient().$extends(withAccelerate())
+  prisma = getPrismaClient()
 } else {
   if (!global.cachedPrisma) {
-    global.cachedPrisma = new PrismaClient().$extends(withAccelerate())
+    global.cachedPrisma = getPrismaClient()
   }
   prisma = global.cachedPrisma
 }
