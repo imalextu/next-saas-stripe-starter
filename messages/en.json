@@ -1,7 +1,8 @@
 {
   "HomePage": {
     "title": "Hello world!",
-    "about": "Go to the about page"
+    "about": "Go to the about page",
+    "blog": "Go to the blog page"
   },
   "Index": {
     "title": "Home",
@@ -27,5 +28,6 @@
   "Secret": {
     "title": "Secret page",
     "description": "This page is only visible for logged in users."
-  }
+  },
+  "blog": "Blog"
 }
