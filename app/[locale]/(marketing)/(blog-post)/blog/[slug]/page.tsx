@@ -69,7 +69,7 @@ export default async function PostPage({
   const relatedArticles =
     (post.related &&
       post.related.map(
-        (slug) => allPosts.find((post) => post.slugAsParams === slug)!,
+        (slug) => allPosts.find((post) => post.slugAsParams === slug.trim())!,
       )) ||
     [];
 
