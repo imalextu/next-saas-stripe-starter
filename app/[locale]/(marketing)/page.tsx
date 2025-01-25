@@ -12,7 +12,7 @@ import Transition from "@/components/trasition";
 export default function IndexPage() {
   return (
     <>
-      <Transition />
+      {/* <Transition /> */}
       <HeroLanding />
       <PreviewLanding />
       <Powered />
