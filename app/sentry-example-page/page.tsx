@@ -1,5 +1,5 @@
 "use client";
-
+export const runtime = "edge";
 import Head from "next/head";
 import * as Sentry from "@sentry/nextjs";
 
