@@ -1,4 +1,5 @@
 name = "targetprompt"
+compatibility_flags = [ "nodejs_compat" ]
 
 [vars]
 
