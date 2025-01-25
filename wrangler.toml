@@ -1,27 +1,25 @@
 name = "targetprompt"
-compatibility_flags = [ "nodejs_compat" ]
+compatibility_flags = ["nodejs_compat"]
 
 [vars]
+NEXT_PUBLIC_APP_URL = "https://targetprompt.com"
 
-NEXT_PUBLIC_APP_URL=https://targetprompt.com
+RESEND_API_KEY = "xxxx"
 
+EMAIL_FROM = "imalextu@gmail.com"
 
-RESEND_API_KEY=xxxx
+STRIPE_API_KEY = "xxx"
 
-EMAIL_FROM="imalextu@gmail.com"
+STRIPE_WEBHOOK_SECRET = "xxxx"
 
-STRIPE_API_KEY=xxx
+NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PLAN_ID = "xx"
 
-STRIPE_WEBHOOK_SECRET=xxxx
+NEXT_PUBLIC_STRIPE_PRO_YEARLY_PLAN_ID = "xx"
 
-NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PLAN_ID=xx
+NEXT_PUBLIC_STRIPE_BUSINESS_MONTHLY_PLAN_ID = "xx"
 
-NEXT_PUBLIC_STRIPE_PRO_YEARLY_PLAN_ID=xx
+NEXT_PUBLIC_STRIPE_BUSINESS_YEARLY_PLAN_ID = "xxx"
 
-NEXT_PUBLIC_STRIPE_BUSINESS_MONTHLY_PLAN_ID=xx
+HTTPS_PROXY = "http://127.0.0.1:7890"
 
-NEXT_PUBLIC_STRIPE_BUSINESS_YEARLY_PLAN_ID=xxx
-
-HTTPS_PROXY=http://127.0.0.1:7890
-
-HTTP_PROXY=http://127.0.0.1:7890
+HTTP_PROXY = "http://127.0.0.1:7890"
